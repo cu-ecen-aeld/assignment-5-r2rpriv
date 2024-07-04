@@ -5,7 +5,7 @@
 #
 ##############################################################
 
-AESD_ASSIGNMENTS_VERSION = f5958282726616c24eb03625a8c678e92ffe3008
+AESD_ASSIGNMENTS_VERSION = c37acde4cef9473d1da40503629ccced82ee481d
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
@@ -14,7 +14,7 @@ AESD_ASSIGNMENTS_SITE_METHOD = git
 AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
 
 define AESD_ASSIGNMENTS_BUILD_CMDS
-	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/finder-app all
+	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/finder-app default
 endef
 
 define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
